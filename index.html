@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường THPT Hậu Lộc 4 - Thanh Hóa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0056b3, #007bff);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #0056b3;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #0056b3;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #007bff;
+            display: inline-block;
+        }
+
+        .gallery-img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #0056b3;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-list p {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+        }
+
+        footer {
+            background: #212529;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            section {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🏫 TRƯỜNG TRUNG HỌC PHỔ THÔNG HẬU LỘC 4</h1>
+    <p>Xã Vạn Lộc, Huyện Hậu Lộc, Tỉnh Thanh Hóa</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#gioithieu">Giới thiệu</a></li>
+        <li><a href="#hinhanh">Hình ảnh</a></li>
+        <li><a href="#sumenh">Sứ mệnh</a></li>
+        <li><a href="#banggiahieu">Ban Giám hiệu</a></li>
+        <li><a href="#lienhe">Liên hệ</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section id="gioithieu">
+        <h2>📖 Giới thiệu chung</h2>
+        <p><strong>Trường THPT Hậu Lộc 4</strong> được thành lập năm <strong>2006</strong>, tại xã Vạn Lộc, huyện Hậu Lộc, tỉnh Thanh Hóa. Tròn <strong>20 năm</strong> xây dựng và phát triển (2006-2026), trường đã đạt chuẩn Quốc gia mức độ 1 và trở thành một địa chỉ tin cậy trong giáo dục tại địa phương.</p>
+        <p style="margin-top: 0.5rem;">Trường luôn nỗ lực xây dựng môi trường giáo dục hiện đại, lành mạnh, giúp học sinh phát triển toàn diện, xứng đáng với niềm tin của gia đình và xã hội.</p>
+    </section>
+
+    <section id="hinhanh">
+        <h2>📸 Hình ảnh trường</h2>
+        
+        <h3>🔹 Biển tên trường</h3>
+        <img src="anh_bien_ten.jpg" alt="Biển tên trường THPT Hậu Lộc 4" class="gallery-img">
+        <p style="font-size: 0.9rem; color: #666; font-style: italic;">Biển tên trường THPT Hậu Lộc 4</p>
+
+        <h3 style="margin-top: 2rem;">🔹 Lễ kỷ niệm 20 năm thành lập trường (15/11/2026)</h3>
+        <img src="anh_le_ky_niem_1.jpg" alt="Lễ kỷ niệm 20 năm thành lập trường - Phát biểu" class="gallery-img">
+        <img src="anh_le_ky_niem_2.jpg" alt="Lễ kỷ niệm 20 năm thành lập trường" class="gallery-img">
+        <p style="font-size: 0.9rem; color: #666; font-style: italic;">Lễ kỷ niệm 20 năm thành lập trường THPT Hậu Lộc 4 (2006-2026)</p>
+        
+        <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+            <strong>💡 Lưu ý:</strong> Để hiển thị ảnh, bạn vui lòng lưu các hình ảnh vào cùng thư mục với file <code>index.html</code> và đổi tên các file ảnh thành tương ứng trong code:
+            <ul style="margin: 0.5rem 0 1rem 1.5rem;">
+                <li>Ảnh biển tên → <code>anh_bien_ten.jpg</code></li>
+                <li>Ảnh lễ kỷ niệm thứ nhất → <code>anh_le_ky_niem_1.jpg</code></li>
+                <li>Ảnh lễ kỷ niệm thứ hai → <code>anh_le_ky_niem_2.jpg</code></li>
+            </ul>
+            Hoặc bạn có thể thay đường dẫn bằng link ảnh trực tuyến nhé! 😊
+        </div>
+    </section>
+
+    <section id="sumenh">
+        <h2>🎯 Sứ mệnh & Tầm nhìn</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Sứ mệnh</h3>
+                <p>Đào tạo thế hệ học sinh có đạo đức, tri thức, sức khỏe, đáp ứng yêu cầu xây dựng và bảo vệ Tổ quốc.</p>
+            </div>
+            <div class="card">
+                <h3>Tầm nhìn</h3>
+                <p>Xây dựng trường trở thành trường chất lượng cao, giữ vững chuẩn Quốc gia, phát triển bền vững.</p>
+            </div>
+            <div class="card">
+                <h3>Giá trị cốt lõi</h3>
+                <p>✅ Yêu nước – Tận tâm – Chất lượng – Sáng tạo – Hợp tác – Phát triển</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="banggiahieu">
+        <h2>👨‍🏫 Ban Giám hiệu</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Thầy Nguyễn Mạnh Tuấn</h3>
+                <p><strong>Hiệu trưởng</strong><br>Quản lý và chỉ đạo chung hoạt động của nhà trường</p>
+            </div>
+            <div class="card">
+                <h3>Thầy Nguyễn Tuấn Việt</h3>
+                <p><strong>Phó Hiệu trưởng</strong><br>Phụ trách công tác chuyên môn, kiểm tra đánh giá</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lienhe">
+        <h2>📍 Thông tin liên hệ</h2>
+        <div class="info-list">
+            <p><strong>Địa chỉ:</strong> Xã Vạn Lộc, Huyện Hậu Lộc, Tỉnh Thanh Hóa</p>
+            <p><strong>Điện thoại:</strong> 0237 38xxxxxx</p>
+            <p><strong>Email:</strong> thpthauloc4@thanhhoa.edu.vn</p>
+            <p><strong>Thành lập:</strong> Năm 2006</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>🏫 TRƯỜNG THPT HẬU LỘC 4</p>
+    <p>Xã Vạn Lộc, Huyện Hậu Lộc, Tỉnh Thanh Hóa</p>
+    <p>© 2026 - Bản quyền thuộc về Trường THPT Hậu Lộc 4</p>
+</footer>
+
+</body>
+</html>
